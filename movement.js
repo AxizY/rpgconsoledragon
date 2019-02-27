@@ -37,7 +37,8 @@ end()
 
 }} else if(direct == 'close') {return}
 move()}
-*/
+
+
 var m = {
   get w() {
     if (ylocatione == 1) {} else {
@@ -67,6 +68,46 @@ end()
 }
   }
 }
+*/
+Object.defineProperty(window, 'w', {
+  get() {
+  if (ylocatione == 1) {} else {
+yoppoloce = yoppoloce+1
+ylocatione = ylocatione-1
+end()
+}}
+  })
+Object.defineProperty(window, 'a', {
+  get() {
+  if (oppoloce == 6 || locatione == 1) {} else {
+oppoloce = oppoloce+1
+locatione = locatione-1
+end()
+  }
+  }})
+Object.defineProperty(window, 's', {
+  get() {
+if (ylocatione == 5) {} else {
+yoppoloce = yoppoloce-1
+ylocatione = ylocatione+1
+end()
+}
+  }})
+Object.defineProperty(window, 'd', {
+  get() {
+   if (oppoloce == 1 || locatione == 6) {} else {
+oppoloce = oppoloce-1
+locatione = locatione+1
+end()
+}
+  }})
+/*
+Object.defineProperty(window, 'inter', {
+  get() {
+}
+  }})
+*/
+
 function end() {
 clear()
 
