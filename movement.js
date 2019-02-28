@@ -12,13 +12,16 @@ if(ylocatione == 4){console.log(map.substring(oppoloce)+'&'+map.substring(locati
 if(ylocatione == 5){console.log(map.substring(oppoloce)+'&'+map.substring(locatione))} else {console.log(map.substring(oppoloce-1)+map.substring(locatione))}
 }
 var settings = {
-  movingstyle: ['m', 'input'],
-  
-  
+  movingstyle: ['input: w, a s, and d', 'direction: u, d, l, and r'],
+ 
 }
-
+//fix
+var changesettings = {
+  changesettings.movingstyle[]
+}
+/*
 function m(side) {
-  if()
+ 
 if (side == 'r') {
 if (oppoloce == 1 || locatione == 6) {} else {
 oppoloce = oppoloce-1
@@ -41,7 +44,46 @@ yoppoloce = yoppoloce+1
 }}
 end()
 }
+*/
 
+Object.defineProperty(window, 'w', {
+  get() {
+  if (ylocatione == 1) {} else {
+yoppoloce = yoppoloce+1
+ylocatione = ylocatione-1
+end()
+}}
+  })
+Object.defineProperty(window, 'a', {
+  get() {
+  if (oppoloce == 6 || locatione == 1) {} else {
+oppoloce = oppoloce+1
+locatione = locatione-1
+end()
+  }
+  }})
+Object.defineProperty(window, 's', {
+  get() {
+if (ylocatione == 5) {} else {
+yoppoloce = yoppoloce-1
+ylocatione = ylocatione+1
+end()
+}
+  }})
+Object.defineProperty(window, 'd', {
+  get() {
+   if (oppoloce == 1 || locatione == 6) {} else {
+oppoloce = oppoloce-1
+locatione = locatione+1
+end()
+}
+  }})
+/*
+Object.defineProperty(window, 'inter', {
+  get() {
+}
+  }})
+*/
 
 
 function end() {
