@@ -1,5 +1,5 @@
 
-function startgame() {
+function sg() {
 map = '######'
 locatione = 1
 oppoloce = 6
@@ -11,8 +11,14 @@ if(ylocatione == 3){console.log(map.substring(oppoloce)+'&'+map.substring(locati
 if(ylocatione == 4){console.log(map.substring(oppoloce)+'&'+map.substring(locatione))} else {console.log(map.substring(oppoloce-1)+map.substring(locatione))}
 if(ylocatione == 5){console.log(map.substring(oppoloce)+'&'+map.substring(locatione))} else {console.log(map.substring(oppoloce-1)+map.substring(locatione))}
 }
+var settings = {
+  movingstyle: ['m', 'input'],
+  
+  
+}
 
-function move(side) {
+function m(side) {
+  if()
 if (side == 'r') {
 if (oppoloce == 1 || locatione == 6) {} else {
 oppoloce = oppoloce-1
@@ -47,31 +53,4 @@ if(ylocatione == 3){console.log(map.substring(oppoloce)+'&'+map.substring(locati
 if(ylocatione == 4){console.log(map.substring(oppoloce)+'&'+map.substring(locatione))} else {console.log(map.substring(oppoloce-1)+map.substring(locatione))}
 if(ylocatione == 5){console.log(map.substring(oppoloce)+'&'+map.substring(locatione))} else {console.log(map.substring(oppoloce-1)+map.substring(locatione))}
 }
-  /* How can I put Multiple getters in a variable or just find a easy way.
-const m = {
-  get r() {
-  if (oppoloce == 1 || locatione == 6) {} else {
-oppoloce = oppoloce-1
-locatione = locatione+1
-end()
-  }}
-  get l() {
-if (oppoloce == 6 || locatione == 1) {} else {
-oppoloce = oppoloce+1
-locatione = locatione-1
- end()
-}}
-  get u() {
-  if (ylocatione == 1) {} else {
-ylocatione = ylocatione-1
-yoppoloce = yoppoloce+1 
-end()
-  }}
 
-  get d() {
-  if (ylocatione == 5) {} else {
-ylocatione = ylocatione+1
-yoppoloce = yoppoloce-1
-end()
-}}}
-*/
