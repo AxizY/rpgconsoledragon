@@ -1,4 +1,3 @@
-
 function sg() {
 map = '######'
 locatione = 1
