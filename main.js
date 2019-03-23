@@ -73,12 +73,9 @@ locatione = locatione+1
 end()
 }
   }})
-/*
-Object.defineProperty(window, 'inter', {
-  get() {
+fucntion inter(direction) {
+
 }
-  }})
-*/
 
 
 function end() {
