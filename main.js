@@ -11,9 +11,7 @@ var settings = {
  
 }
 //fix
-var changesettings = {
-  changesettings.movingstyle[]
-}
+
 /*
 function m(side) {
  
@@ -73,9 +71,6 @@ locatione = locatione+1
 end()
 }
   }})
-fucntion inter(direction) {
-
-}
 
 
 function end() {
